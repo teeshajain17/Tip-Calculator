@@ -184,7 +184,7 @@ namespace TipCalculatorr
         private void txtTip_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-            if (!char.IsDigit(ch) && ch != 8 && ch!='%' && ch != '.')
+            if (!char.IsDigit(ch) && ch != 8 && ch!='%')
             {
                 e.Handled = true;
             }
