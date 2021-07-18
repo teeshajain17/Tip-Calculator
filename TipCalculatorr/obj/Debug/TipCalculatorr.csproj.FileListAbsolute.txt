@@ -8,3 +8,13 @@ C:\Users\hp\source\repos\TipCalculatorr\obj\Debug\TipCalculatorr.csproj.CoreComp
 C:\Users\hp\source\repos\TipCalculatorr\obj\Debug\TipCalculatorr.exe
 C:\Users\hp\source\repos\TipCalculatorr\obj\Debug\TipCalculatorr.pdb
 C:\Users\hp\source\repos\TipCalculatorr\obj\Debug\TipCalculatorr.TipCalculator.resources
+C:\Users\hp\source\Repo\TipCalculatorr\bin\Debug\TipCalculatorr.exe.config
+C:\Users\hp\source\Repo\TipCalculatorr\bin\Debug\TipCalculatorr.exe
+C:\Users\hp\source\Repo\TipCalculatorr\bin\Debug\TipCalculatorr.pdb
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.csproj.AssemblyReference.cache
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.TipCalculator.resources
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.Properties.Resources.resources
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.csproj.GenerateResource.cache
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.exe
+C:\Users\hp\source\Repo\TipCalculatorr\obj\Debug\TipCalculatorr.pdb

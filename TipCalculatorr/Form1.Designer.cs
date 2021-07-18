@@ -46,6 +46,7 @@ namespace TipCalculatorr
             this.rightLbl3 = new System.Windows.Forms.Label();
             this.txtTipPerPerson = new System.Windows.Forms.TextBox();
             this.txtTotalPerPerson = new System.Windows.Forms.TextBox();
+            this.line = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblBill
@@ -230,12 +231,21 @@ namespace TipCalculatorr
             this.txtTotalPerPerson.TabIndex = 17;
             this.txtTotalPerPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // line
+            // 
+            this.line.BackColor = System.Drawing.Color.Gainsboro;
+            this.line.Location = new System.Drawing.Point(321, 0);
+            this.line.Name = "line";
+            this.line.Size = new System.Drawing.Size(2, 310);
+            this.line.TabIndex = 18;
+            // 
             // TipCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(701, 308);
+            this.Controls.Add(this.line);
             this.Controls.Add(this.txtTotalPerPerson);
             this.Controls.Add(this.txtTipPerPerson);
             this.Controls.Add(this.rightlbl4);
@@ -282,6 +292,7 @@ namespace TipCalculatorr
         private System.Windows.Forms.Label rightLbl3;
         private System.Windows.Forms.TextBox txtTipPerPerson;
         private System.Windows.Forms.TextBox txtTotalPerPerson;
+        private System.Windows.Forms.Label line;
     }
 }
 
