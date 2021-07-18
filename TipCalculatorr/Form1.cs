@@ -160,19 +160,7 @@ namespace TipCalculatorr
             }
         }
 
-        private void txtBill_TextChanged(object sender, EventArgs e)
-        {
-            /*
-            numberOfPeople = Calculate_TipOrNumberOfPeople(txtNumberOfPeople.Text);
-            tipVal = Calculate_TipOrNumberOfPeople(txtTip.Text);
-            if(tipVal>0 && numberOfPeople > 0)
-            {
-                billVal = Calculate_Bill(txtBill.Text);
-                billVal = Math.Round(billVal, 2);
-                if (billVal > 0) DisplayResult();
-            }*/
-        }
-
+    
         private void txtBill_KeyPress(object sender, KeyPressEventArgs e)
         {
             

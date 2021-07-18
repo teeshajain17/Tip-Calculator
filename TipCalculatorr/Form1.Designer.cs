@@ -89,7 +89,6 @@ namespace TipCalculatorr
             this.txtBill.Size = new System.Drawing.Size(236, 35);
             this.txtBill.TabIndex = 4;
             this.txtBill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBill.TextChanged += new System.EventHandler(this.txtBill_TextChanged);
             this.txtBill.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBill_KeyPress);
             // 
             // txtTip
