@@ -266,7 +266,6 @@ namespace TipCalculatorr
             this.Name = "TipCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tip Calculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.TipPerperson_click);
             this.ResumeLayout(false);
             this.PerformLayout();

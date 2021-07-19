@@ -8,24 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+/*  TIP CALCULATOR ASSIGNMENT MADE BY TEESHA JAIN FOR GRAPECITY*/
+
 namespace TipCalculatorr
 {
     public partial class TipCalculator : Form
     {
+        // Initialising variables to store values
         double billVal=0;
         int tipVal=0;
         int numberOfPeople=0;
+        // After opening the calculator it must display the default values
         public TipCalculator()
         {
             InitializeComponent();
             DisplayResult();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //Method to calulate bill value from the input string
         double Calculate_Bill(string str)
         {
             if (str == "") return 0;
@@ -33,6 +34,7 @@ namespace TipCalculatorr
          
             
         }
+        //Common method to calculate Tip % or Number of People
         int Calculate_TipOrNumberOfPeople(string str)
         {
             
@@ -47,7 +49,7 @@ namespace TipCalculatorr
                 return Convert.ToInt32(ans);
            
         }
-
+        //Method to calculate Tip per person
         double Calculate_TipPerPerson(double bill, int tip, int number)
         {
             double tipPerPerson = (bill * tip) / 100;
@@ -75,6 +77,8 @@ namespace TipCalculatorr
             }
             return Math.Round(total, 2);
         }
+
+        // Method to display values on click 
         private void TipPerperson_click(object sender, EventArgs e)
         {
             billVal = Calculate_Bill(txtBill.Text);
@@ -86,6 +90,7 @@ namespace TipCalculatorr
             numberOfPeople = Calculate_TipOrNumberOfPeople(txtNumberOfPeople.Text);
             DisplayResult();
         }
+        // Method to define the functioning of Minus button on Tip%
 
         private void btnTipMinus_Click(object sender, EventArgs e)
         {
@@ -95,6 +100,7 @@ namespace TipCalculatorr
             DisplayResult();
 
         }
+        // Method to define the functioning of Plus button on Tip%
 
         private void btnTipPlus_Click(object sender, EventArgs e)
         {
@@ -103,6 +109,7 @@ namespace TipCalculatorr
             DisplayResult();
         }
 
+        // Method to define the functioning of Minus button on Number of People
         private void btnNumberMinus_Click(object sender, EventArgs e)
         {
             numberOfPeople -= 1;
@@ -110,12 +117,16 @@ namespace TipCalculatorr
             txtNumberOfPeople.Text = Convert.ToString(numberOfPeople);
             DisplayResult();
         }
+
+        //Method to define the functioning of Plus button on Number of People
         private void btnNumberPlus_Click(object sender, EventArgs e)
         {
             numberOfPeople += 1;
             txtNumberOfPeople.Text = Convert.ToString(numberOfPeople);
             DisplayResult();
         }
+
+        // Function to display values after calculation
         void DisplayResult()
         {
             
@@ -130,6 +141,8 @@ namespace TipCalculatorr
 
 
         }
+
+        // Method to display values when text changes on the textbox which contains number of people
 
         private void txtNumberOfPeople_TextChanged(object sender, EventArgs e)
         {
@@ -146,6 +159,7 @@ namespace TipCalculatorr
             }
         }
 
+        // Method to display values when text changes on the textbox which contains tip %
         private void txtTip_TextChanged(object sender, EventArgs e)
         {
             
@@ -160,7 +174,7 @@ namespace TipCalculatorr
             }
         }
 
-    
+        // Method to take proper input on bill box
         private void txtBill_KeyPress(object sender, KeyPressEventArgs e)
         {
             
@@ -171,6 +185,7 @@ namespace TipCalculatorr
             }
         }
 
+        // Method to take proper input on tip % box
         private void txtTip_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
@@ -179,7 +194,7 @@ namespace TipCalculatorr
                 e.Handled = true;
             }
         }
-
+        // Method to take proper input on number of people box
         private void txtNumberOfPeople_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
